@@ -9,7 +9,7 @@ namespace gameLib.Repos
 {
     public class MongoDBGamesRepository : GameDBInterface
     {
-        // settings like "dbName", "collection", etc.. I would usually feed a program from outside so you dont need to change code in oreder to change settings
+        // settings like "dbName", "collection", etc.. I would usually feed a program from outside so you dont need to change code in order to change settings
         // also makes it easier to fire up testing/staging environments if your into that sort of thing ;)
         private const string dbName = "library";
         private const string collection = "games";
