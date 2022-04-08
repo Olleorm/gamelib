@@ -16,10 +16,10 @@ namespace browserClient
     public class Program
     {
         public static readonly HttpClient httpClient = new HttpClient();
-        static async Task Main(string[] args)
+        static async Task Main()
         {
             Cli cli = new Cli();
-            await cli.RunCli(args);
+            await cli.RunCli();
         }
     }
 
@@ -55,8 +55,8 @@ namespace browserClient
 
                     case "search":
                         Console.Write("path to title file: ");
-                        var title = Console.ReadLine();
-                        await CallSearchGames(args[1]);
+                        var titles = Console.ReadLine();
+                        await CallSearchGames(titles);
                         break;
 
                     case "help":
